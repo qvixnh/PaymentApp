@@ -18,7 +18,8 @@
                     <div>{{ pd.cardNumber}}</div>
                     <div class="fw-bold">{{ pd.expirationDate}}</div>
                 </div>  
-                <span class="text-secondary"><i class="fa-solid fa-trash-can  fa-lg mouse-hover"></i></span>             
+                <span class="text-secondary"><i class="fa-solid fa-trash-can  fa-lg mouse-hover"
+                    (click)="onDelete(pd.paymentDetailId)"></i></span>             
             </li>
         </ul>
     </div>
